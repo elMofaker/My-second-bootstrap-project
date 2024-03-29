@@ -14,4 +14,4 @@
 ![7](https://github.com/elMofaker/templet-ui-and-development-bootstrap-project/assets/155926314/ff4aa92f-f97d-40bb-877e-ee7310b40c0d)
 
 
-https://elmofaker.github.io/templet-ui-and-development-bootstrap-project/
+https://elmofaker.github.io/coffee-templet-ui-and-development-bootstrap-project/
