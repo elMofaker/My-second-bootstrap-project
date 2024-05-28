@@ -21,10 +21,10 @@
 
 <body>
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container">
             <!-- navbar << logo icon -->
-            <img src="img/logo.png" width="9%">
+            <img src="img/logo.png" width="5%">
             <!-- icon bars  / css=(true/fols)-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
                 aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse text-light" id="main">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link p-lg-3 p-2 active" aria-current="page" href="#">Home <span
+                        <a class="nav-link p-lg-3 p-2 active" aria-current="page" href="#">Home<span
                                 class="active"></span></a>
                     </li>
                     <li class="nav-item">
@@ -51,14 +51,37 @@
                     </li>
                 </ul>
                 <!-- navbar << icon-search -->
-                <div class="search ps-5 pe-4 d-none d-lg-block fs-4">
+                <div class="search ps-5 pe-4 d-none d-lg-block fs-5">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
         </div>
     </nav>
     <!-- slid start -->
-    <div id="carouselExampleAutoplaying" class="carousel slide pb-3" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide pb-3" data-bs-ride="carousel">
+        <div class="bg d-flex justify-content-center align-items-center">
+            <div class="text-center text-le">
+                <h1 class="pt-3 pb-3"><span>L</span>or<span>e</span>m i<span>p</span>su<span>m </span>d<span>o</span>lo<span>r </span> s<span>i</span>t.</h1>
+                <p class="pt-3 pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae aut numquam, saepe rem ex.
+                </p>
+                <div class="text-center pt-5 pb-3 d-flex justify-content-center">
+                    <button class="animated-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                        <span class="text">Shop Now</span>
+                        <span class="circle"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/main7.jpg" class="d-block w-100" alt="none img">
@@ -70,16 +93,6 @@
                 <img src="img/main5.jpg" class="d-block w-100" alt="none img">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     <!-- slid end -->
     <!-- start about_us -->
@@ -90,7 +103,7 @@
             </div>
             <div class="row pt-5 pb-5">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-lg-end text-center">
-                    <img class="main_img" src="img/main2.jpg " alt="">
+                    <img class="main_img" src="img/main2.jpg" alt="none img">
                 </div>
                 <div class="med col-lg-6 col-md-6 col-sm-12 text-light pm-5">
                     <h5 class="text-dd pm-3">What Makes Our Coffee Special?</h5>
@@ -418,42 +431,42 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <ul>
-                            <li><a href="#"><span>Home</span></a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">OUR MENU</a></li>
-                            <li><a href="#">LATEST PRODUCTS</a></li>
-                            <li><a href="#">CUSTOMER'S REVIEW</a></li>
-                            <li><a href="#">Map</a></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <ul>
+                                <li><a href="#"><span>Home</span></a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">OUR MENU</a></li>
+                                <li><a href="#">LATEST PRODUCTS</a></li>
+                                <li><a href="#">CUSTOMER'S REVIEW</a></li>
+                                <li><a href="#">Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <ul>
+                                <li><a href="#"><span>Email</span></a></li>
+                                <li><a href="#">Log-in</a></li>
+                                <li><a href="#">Sign-in</a></li>
+                                <li><a href="#">Info</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <ul>
+                                <li><a href="#"><span>Menu</span></a></li>
+                                <li><a href="#">Coffee Cup</a></li>
+                                <li><a href="#">Coffee Bag</a></li>
+                                <li><a href="#">Take Aeay</a></li>
+                            </ul>
+                        </div>
+                        <div class="con_icon text-center m-auto pt-5">
+                            <i class="fa-brands facebook fa-facebook"></i>
+                            <i class="fa-brands instagram fa-instagram"></i>
+                            <i class="fa-brands twitter fa-twitter"></i>
+                            <i class="fa-brands youtube fa-youtube"></i>
+                            <i class="fa-brands linkedin fa-linkedin-in"></i>
+                            <i class="fa-solid paper fa-paper-plane"></i>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <ul>
-                            <li><a href="#"><span>Email</span></a></li>
-                            <li><a href="#">Log-in</a></li>
-                            <li><a href="#">Sign-in</a></li>
-                            <li><a href="#">Info</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <ul>
-                            <li><a href="#"><span>Menu</span></a></li>
-                            <li><a href="#">Coffee Cup</a></li>
-                            <li><a href="#">Coffee Bag</a></li>
-                            <li><a href="#">Take Aeay</a></li>
-                        </ul>
-                    </div>
-                    <div class="con_icon text-center m-auto pt-5">
-                        <i class="fa-brands facebook fa-facebook"></i>
-                        <i class="fa-brands instagram fa-instagram"></i>
-                        <i class="fa-brands twitter fa-twitter"></i>
-                        <i class="fa-brands youtube fa-youtube"></i>
-                        <i class="fa-brands linkedin fa-linkedin-in"></i>
-                        <i class="fa-solid paper fa-paper-plane"></i>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -463,7 +476,9 @@
     <!-- start el mofaker  -->
     <div class="elMofaker text-center pb-5">
         <div class="con text-light pb-5 text-center">
-            <p>Designed, implemented and developed by: <h1><span class="main_span">E</span>L_<span class="main_span">M</span>OFAKER</h1></p>
+            <p>Designed, implemented and developed by:
+            <h1><span class="main_span">E</span>L_<span class="main_span">M</span>OFAKER</h1>
+            </p>
             <p>tgtgygyuossef@gmail.com</p>
             <P>19-01-2024</P>
         </div>

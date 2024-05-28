@@ -4,36 +4,130 @@
     --color-bronz: wheat;
 }
 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    box-shadow: 0 0 0 2px var(--color-gold);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: rgba(238, 130, 238, 0);
+}
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: var(--color-gold);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(245, 245, 220, 0);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    color: var(--color-bronz);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    /* color: var(--color-gold); */
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+    color: var(--color-gold);
+}
+
+.animated-button:hover svg {
+    fill: var(--color-bronz);
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px var(--color-gold);
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+
 @media (max-width: 991px) {
-    .navbar img{
+    .navbar img {
         width: 14%;
     }
 }
+
 /* Small */
-@media  (max-width: 766px){
-.about img{
-    width: 80rem;
+@media (max-width: 766px) {
+    .about img {
+        width: 80rem;
+    }
+
+    .med {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .text-dd {
+        text-align: center;
+    }
 }
-.med{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px; 
+
+@media (min-width: 766px) {
+    .med {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
 }
-.text-dd{
-    text-align: center;
-}
-}
-@media  (min-width: 766px){
-.med{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-}
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: black;
@@ -94,13 +188,19 @@ ul {
 
 
 /* start nav */
+.scrolled {
+    transition: .5s;
+    box-shadow: inset -3px -12px 33px -29px var(--color-bronz);
+    background-color: #000000eb;
+    transition: .5s;
+}
+
 .navbar {
-    background-color: #000000d9;
+    transition: .5s;
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
-    box-shadow: inset -3px -12px 33px -29px var(--color-bronz);
 }
 
 .navbar ul {
@@ -174,6 +274,31 @@ ul {
 }
 
 /* end nav */
+/* start home */
+#carouselExampleSlidesOnly,
+#carouselExampleSlidesOnly img{
+    height: 100vh;
+}
+#carouselExampleSlidesOnly h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-bronz);
+}
+#carouselExampleSlidesOnly{
+    color: rgba(245, 222, 179, 0.47);
+}
+#carouselExampleSlidesOnly .text-le h1 span{
+    color: var(--color-gold);
+}
+.bg {
+    background-color: rgba(0, 0, 0, 0.819);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 44;
+}
+/* end home */
+
 /* start menu */
 .menu {
     background-color: rgb(0, 0, 0);
@@ -184,13 +309,16 @@ ul {
 .about .row {
     color: var(--color-bronz);
 }
-.about img{
-    width: 20rem;
+
+.about img {
+    width: 14rem;
 }
-.med{
+
+.med {
     text-align: start;
     padding-top: 20px;
 }
+
 .about .row h5,
 .about .row p {
     color: var(--color-bronz);
@@ -272,7 +400,7 @@ footer ul li a {
 footer .con_icon svg {
     padding: 10px 20px;
     font-size: 30px;
-    
+
 }
 
 footer .con_icon .facebook {
@@ -304,7 +432,6 @@ footer .paper {
 .elMofaker .con {
     box-shadow: inset 0 14px 21px -19px wheat;
     padding-top: 25px;
-    
 }
 
 /* end my email */
